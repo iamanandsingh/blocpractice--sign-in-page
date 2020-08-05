@@ -1,4 +1,3 @@
-
 import 'package:blocpractice/src/blocs/bloc.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +40,8 @@ class LoginScreen extends StatelessWidget {
           return TextField(
             onChanged: bloc.passwordInput,
             decoration: InputDecoration(
-                labelText: "enter password", errorText: snapshot.error),
+                labelText: "enter password",
+                errorText: snapshot.error),
           );
         });
   }
